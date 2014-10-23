@@ -103,7 +103,7 @@ public class PerspectiveView extends GLSurfaceView implements GLSurfaceView.Rend
         this.contentTexture = contentTexture;
         
         Log.v("ARC", contentTexture+"::::::::");
-        
+        this.hasTexture = false;
         
         this.origin_left = left;
         this.origin_right = right;
