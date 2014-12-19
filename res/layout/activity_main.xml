@@ -15,12 +15,12 @@
         android:numColumns="auto_fit"
         android:verticalSpacing="15dp" />
 
-    <FrameLayout
+    <com.witmob.bookopen.MainContainer
         android:id="@+id/containers"
         android:background="@android:color/black"
         android:layout_width="match_parent"
         android:alpha="0"
         android:layout_height="match_parent" >
-    </FrameLayout>
+    </com.witmob.bookopen.MainContainer>
 
 </FrameLayout>

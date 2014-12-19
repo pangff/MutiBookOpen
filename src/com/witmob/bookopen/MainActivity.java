@@ -32,7 +32,13 @@ public class MainActivity extends GlobalActivity {
 
 		bookGrid = (GridView) this.findViewById(R.id.bookGrid);
 		adapter = new BookShelfAdapter(this);
-		bookGrid.setAdapter(adapter);
+		container.post(new Runnable() {
+			
+			@Override
+			public void run() {
+				bookGrid.setAdapter(adapter);
+			}
+		});
 
 		perspectiveView = new PerspectiveView(this);
 		container.addView(perspectiveView);

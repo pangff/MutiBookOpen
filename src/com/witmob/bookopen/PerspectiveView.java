@@ -50,7 +50,7 @@ public class PerspectiveView extends GLSurfaceView implements GLSurfaceView.Rend
 
     private float width, height, ratio, factor;
 
-    private long duration = 2800;
+    private long duration = 1000;
 
     private Bitmap coverTexture, spineTexture, contentTexture;
     
@@ -103,7 +103,7 @@ public class PerspectiveView extends GLSurfaceView implements GLSurfaceView.Rend
         this.contentTexture = contentTexture;
         
         Log.v("ARC", contentTexture+"::::::::");
-        
+        this.hasTexture = false;
         
         this.origin_left = left;
         this.origin_right = right;

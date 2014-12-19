@@ -1,6 +1,8 @@
 package com.witmob.bookopen;
 
 import android.content.Context;
+import android.util.DisplayMetrics;
+import android.view.WindowManager;
 
 
 /**
@@ -100,5 +102,11 @@ public class BookUtils {
 	  public static float toScreenHeight(float glHeight,float screenHeight) {
 	      return (glHeight * screenHeight) / 2.0f;
 	  }
+	  
+	  /**
+	   * 获取view宽高比w/h
+	   * @return
+	   */
+	  public static float VIEW_W_H = 1;
 	
 }
